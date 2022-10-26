@@ -139,6 +139,8 @@ p.btn{
 #sec02{
   padding: 70px 0;
   background-color: rgb(232, 232, 232);
+  height: 100vh;
+  
 }
 
 #sec02>h3{
@@ -183,8 +185,7 @@ p.btn{
   display: inline-block;
   width: 145px;
 }
-#sec02>.info>ul>li>span{
-}
+#sec02>.info>ul>li>span{}
 
 .skill>h4{
   font-size: 33px;
@@ -195,6 +196,8 @@ p.btn{
 .skill>ul{
   background-color: orange;
 }
+
+/* dfn의 위치를 확보하기위해서 padding으로 밀어버리기 포토샵으로 처음에 전략을 잡을때 아얘 잡고가는게 좋다 잘못된 디자인은 헷갈리게한다. */
 .skill>ul>li{
   padding-left: 145px;
   position: relative;
@@ -213,6 +216,7 @@ p.btn{
   height: 32px;
 }
 
+/* nthchild는li요소에 붙는자 자꾸 헷갈려하지말것 */
 .skill>ul>li:nth-child(1)>span{
   background-size: 50% 100%;
 }
@@ -227,4 +231,210 @@ p.btn{
 }
 .skill>ul>li:nth-child(5)>span{
   background-size: 22% 100%;
+}
+
+/* sec03 */
+
+#sec03{
+  height: 100vh;
+  padding: 70px 0 0;
+  
+}
+
+#sec03>h3{
+  width: 100%;
+  font-size: 60px;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 50px;
+  text-align: center;
+}
+#sec03>ul{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 65px;
+
+}
+#sec03>ul>li{
+  line-height: 15px;
+  padding: 0 15px;
+  border-left: 1px solid #333;
+}
+#sec03>ul>li>a{
+  font-size: 14px;
+}
+
+#sec03>ul>li:first-child{
+  border-left: none;
+}
+
+#sec03>#gallery{
+  position: relative;
+
+}
+#sec03>#gallery>#gshow{}
+#sec03>#gallery>#gshow>#gall{
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+#sec03>#gallery>#gshow>#gall>figure{
+  width: 33.3333%;
+  text-align: center;
+  margin-bottom: 72px;
+}
+#sec03>#gallery>#gshow>#gall>figure>img{
+  margin: 0px auto;
+  width: 259px;
+  border-radius: 50%;
+  margin-bottom: 23px;
+}
+#sec03>#gallery>#gshow>#gall>figure>figcaption{
+  font-size: 20px;
+}
+
+#gallery>.next{
+  display: none;
+  background-color: red;
+  position: absolute;
+  right: 29px; top: 50%;
+  width: 35px; height: 35px;
+}
+#gallery>.prev{
+  display: none;
+  background-color: red;
+  position: absolute;
+  left: 29px; top: 50%;
+  width: 35px; height: 35px;
+}
+
+#modal{
+  display: none;
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+}
+
+/* sec04 */
+
+#sec04{
+  height: 100vh;
+  background-color: #f93c64;
+  padding:72px 0;
+}
+
+#sec04>h3{
+  width: 100%;
+  font-size: 50px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+#sec04>#crwap{
+  width: 1160px;
+  margin: 0 auto;
+}
+#crwap>form{
+  width: 1066px;
+  background-color: turquoise;
+}
+#crwap ul{}
+#crwap ul>li{
+ position: relative;
+ margin-bottom: 35px;
+ padding-left: 145px; 
+}
+#crwap ul>li>label{
+  position: absolute;
+  left: 0; top: 0;
+  width: 145px;
+  display: block;
+  line-height: 50px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  background: url('../images/contact_icon_01.png') no-repeat 10px center;
+  font-size: 22px;
+}
+#crwap ul>li:nth-child(2)>label{
+  background-image: url('../images/contact_icon_02.png')
+}
+#crwap ul>li:nth-child(3)>label{
+  background-image: url('../images/contact_icon_03.png')
+}
+#crwap ul>li:nth-child(4)>label{
+  background-image: url('../images/contact_icon_04.png')
+}
+
+
+#crwap ul>li>input{
+  line-height: 50px;
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  background-color: #fff;
+}
+
+#crwap ul>li>textarea{
+  text-indent: 10px;
+  line-height: 50px;
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  background-color: #fff;
+  resize: none;
+}
+
+
+
+#crwap>form p{
+  text-align: right;
+}
+#crwap p>input{
+  width: 125px;
+  line-height: 45px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  font-size: 10px;
+  border-radius: 10px;
+}
+
+aside>.submenu{
+  position: fixed;
+  right: 15px; top: 50%;
+  z-index: 999;
+
+}
+aside>.submenu>li{
+  margin-bottom: 20px;
+
+}
+aside>.submenu>li>a{
+  display: block;
+  width: 25px; height: 25px;
+  border-radius: 50%;
+  text-indent: -99999px;
+  background-color: red;
+}
+
+aside>.top{
+  width: 45px; height:45px;
+  position: fixed;
+  right: 15px; bottom: 25px;
+  text-indent: -9999px;
+  background-color: red;
+}
+
+footer{
+  background-color: #333;
+  padding: 47px;
+  text-align: center; 
+}
+footer>small{
+  font-size: 15px;
+  color: #fff;
 }
