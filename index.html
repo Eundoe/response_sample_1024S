@@ -6,9 +6,216 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>title</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/index.css">
   <script src="./js/index.js"></script>
 </head>
 <body>
-  <h1>welcome</h1>
+  <!-- 내용은 내것으로 채워넣기 img빼고  -->
+  <div id="wrap">
+    <header>
+      <div id="hwrap">
+        <h1><a href="#wrap">My Portfolio</a></h1>
+        <nav>
+          <h2 class="hide">main navigation</h2>
+          <ul>
+            <li><a href="#wrap">sologun</a></li>
+            <li><a href="#sec02">article</a></li>
+            <li><a href="#sec03">article</a></li>
+            <li><a href="#sec04">article</a></li>
+          </ul>
+          <!-- <p class="close">close</p> -->
+        </nav>
+      </div>
+      <p class="btn">menu_M</p>
+    </header>
+    <article id="sec01">
+      <h3>Slogun</h3>
+      <ul>
+        <li>
+          <span></span>
+          <dl>
+            <dt>MY STORY</dt>
+            <dd>design is what you make of it photoshop illustrotor html css jQuery</dd>
+          </dl>
+        </li>
+        <li>
+          <span></span>
+          <dl>
+            <dt>DESIGN</dt>
+            <dd>hyundai official site main nike korea site main illustration</dd>
+          </dl>
+        </li>
+        <li>
+          <span></span>
+          <dl>
+            <dt>CODING</dt>
+            <dd>guess official site mainhyundai official site mainsk cm mobile site main</dd>
+          </dl>
+        </li>
+      </ul>
+    </article>
+    <article id="sec02">
+      <h3>About</h3>
+      <section class="info">
+        <h4>
+          <img src="./images/header_pic.png" alt="profile">
+        </h4>
+        <ul>
+          <li>
+            <dfn>Name</dfn> 
+            <span>Hong Gill-Dong</span>
+          </li>
+          <li>
+            <dfn>Birth</dfn>
+            <span>2020.03.01</span>
+          </li>
+          <li>
+            <dfn>Residence</dfn> 
+            <span>Seoul Korea</span>
+          </li>
+          <li>
+            <dfn>Major</dfn>
+            <span>Web Design / Publishing</span>
+            <span>html/css</span>
+            <span>javascript</span>
+          </li>
+        </ul>
+      </section>
+      <section class="skill">
+        <h4>Skills</h4>
+        <ul>
+          <li>
+            <dfn>Photoshp</dfn> 
+            <span></span>
+          </li>
+          <li>
+            <dfn>Illustrator</dfn>
+            <span></span>
+          </li>
+          <li>
+            <dfn>Html5/Css</dfn>
+            <span></span>
+          </li>
+          <li>
+            <dfn>Powerpoint</dfn>
+            <span></span>
+          </li>
+          <li>
+            <dfn>jQuery</dfn>
+            <span></span>
+          </li>
+        </ul>
+      </section>
+    </article>
+    <article id="sec03">   
+     <h3>Portfolio</h3>
+     <ul>
+      <li><a href="#">tabmenu01</a></li>
+      <li><a href="#">tabmenu02</a></li>
+      <li><a href="#">tabmenu03</a></li>
+     </ul>
+     <div id="gallery">
+      <div id="gshow">
+        <!-- gshow에서 overflow hidden -->
+        <div id="gall">
+          <figure>
+            <img src="./images/pic01.png" alt="work01">
+            <figcaption>Hyundal</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/pic02.png" alt="work02">
+            <figcaption>Hyundal</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/pic03.png" alt="work03">
+            <figcaption>Hyundal</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/pic04.png" alt="work04">
+            <figcaption>Hyundal</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/pic01.png" alt="work05">
+            <figcaption>Hyundal</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/pic02.png" alt="work06">
+            <figcaption>Hyundal</figcaption>
+          </figure>
+        </div>
+      </div>
+      <p class="next">next</p>
+      <p class="prev">prev</p>
+     </div>
+     <div id="modal">
+      <p class="close">close</p>
+      <section class="mshow">
+        <h5>work name</h5>
+        <div>
+          <figure>
+            <img src="./images/pic01.png" alt="worked1">
+            <figcaption>포폴네임</figcaption>
+            <dl>
+              <!-- 나중에 DB로 바꿀곳 -->
+              <dt>제작년도</dt>
+              <dd></dd>
+              <dt>사용프로그램</dt>
+              <dd></dd>
+              <dt>주소</dt>
+              <dd></dd>
+              <dt>설명</dt>
+              <dd></dd>
+            </dl>
+          </figure>
+        </div>
+      </section>
+     </div>
+    </article>
+    <article id="sec04">
+      <h3>CONTACT</h3>
+      <div id="crwap">
+        <form action="" method="post">
+          <fieldset>
+            <legend class="hide">contact</legend>
+            <ul>
+              <li>
+                <label for="userName">name</label>
+                <input type="text" id="userName">
+              </li>
+              <li>
+                <label for="userEmail">email</label>
+                <input type="email" id="userEmail">
+              </li>
+              <li>
+                <label for="userPhone">phone</label>
+                <input type="phone" id="userPhone">
+              </li>
+              <li>
+                <label for="userMessage">message</label>
+                <textarea name="" id="userMessage" cols="30" rows="10" placeholder="자유롭게 적어주세요">
+                </textarea>
+              </li>
+            </ul>
+            <p><input type="submit"></p>
+          </fieldset>
+        </form>
+      </div>
+    </article>
+    <aside>
+      <ul class="submenu">
+        <li><a href="#sec01">sologun</a></li>
+        <li><a href="#sec02">article</a></li>
+        <li><a href="#sec03">article</a></li>
+        <li><a href="#sec04">article</a></li>
+      </ul>
+      <p class="top">top</p>
+    </aside>
+    <footer>
+      <small>
+        Copyright&copy;2022 MY PORTFOLIO All right reserved
+      </small>
+    </footer>
+  </div>
+
 </body>
 </html>
