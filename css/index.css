@@ -214,6 +214,7 @@ p.btn{
   background: #333 url(../images/bar.gif) no-repeat left top;
   text-indent: -99999px;
   height: 32px;
+  border-radius: 10px;
 }
 
 /* nthchild는li요소에 붙는자 자꾸 헷갈려하지말것 */
@@ -376,6 +377,7 @@ p.btn{
   border: none;
   width: 100%;
   background-color: #fff;
+  text-indent: 10px;
 }
 
 #crwap ul>li>textarea{
@@ -399,7 +401,7 @@ p.btn{
   background-color: orange;
   color: #fff;
   border: none;
-  font-size: 10px;
+  font-size: 24px;
   border-radius: 10px;
 }
 
