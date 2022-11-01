@@ -1,0 +1,392 @@
+@charset "utf-8";
+
+/*스크롤 문제를 해결하기 위해서 사이즈를 2px정도 늘리는것도 방법 */
+@media screen and (min-width: 1160px){
+  #hwrap{
+    width: 1160px;
+    }
+  #sec01>ul{
+      margin-left: -565px;
+      width: 1130px;}
+  #sec02>section{
+      width: 1160px;}
+  #sec03>#gallery>#gshow>#gall{
+      width: 1130px;}
+  #sec04>#crwap{
+      width: 1160px;}
+  
+}
+
+@media screen and (min-width: 980px) and (max-width:1159px){
+  
+  #wrap{}
+  
+  #sec01>ul{
+    position: absolute;
+    left: 0; bottom: 16.578%;
+    margin-left: 0;
+    width: 100%; 
+    /* 1160px */
+    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+
+}
+
+@media screen and (min-width: 580px) and (max-width:979px){
+  #hwrap{
+    display: block;
+  }
+  #hwrap>h1{
+    text-align: center;
+  }
+
+  #hwrap>nav{
+    position : fixed;
+    top: 0; left: -394px;
+    width: 394px; height: 100%;
+    padding-top: 30vh;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  #hwrap>nav>ul{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #hwrap>nav>ul>li{ 
+    line-height: 10vh;
+    display: block;
+    margin-left: 0;
+    border-bottom: 1px solid #fff;
+  }
+  #hwrap>nav>ul>li>a{
+    line-height: 10vh;
+  }
+  p.close{
+  display: block;
+  }
+  p.btn{
+    display: block;
+  }
+
+  #sec01>h3{
+    width: 100%;
+    font-size: 72px;
+    position: absolute;
+    left: 0; top: 24.17%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+  }
+
+  #sec01>ul{
+    position: absolute;
+    left: 50%; bottom: 13vw;
+    margin-left: -46.25vw;
+    width: 92.5vw; 
+    height: 22.5vw;
+  }
+  #sec01>ul>li>span{
+    display: block;
+    /* 당장은 퍼센트 값으로 넣지말것 */
+    width: 22.5vw; height: 22.5vw;
+    margin: 0px auto 1vw;
+
+  }
+  #sec01>ul>li>dl{
+    width: 22.5vw;
+  }
+  #sec02>.info{
+    margin: 0 auto;
+    display: block;
+  }
+  #sec02>.info>h4{
+    width: auto;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  #sec02>.info>ul{
+    margin: 0 auto
+  }
+  .skill>h4{
+    display: none;
+  }
+  .skill>ul{
+    margin: 0 auto ;
+  }
+
+  #sec03{
+    padding: 5vw 0 7.5vw;
+    
+  }
+  #sec03>#gallery{
+    width: 100%;
+  }
+  #sec03>#gallery>#gshow{
+    width: 70vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #sec03>#gallery>#gshow>#gall{
+    width: 210vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: green;
+  }
+  #sec03>#gallery>#gshow>#gall>figure{
+    width: 32.5vw;
+    margin-bottom: 0;
+  }
+  #sec03>#gallery>#gshow>#gall>figure>img{
+    margin-bottom: 2.5vw;
+  }
+  #gallery>.next{
+    display: block;
+    right: 5vw; top: 50%;
+    width: 5vw; height: 5vw;
+    margin-top: -2.5vw;
+  }
+  #gallery>.prev{
+    display: block;
+    left: 5vw; top: 50%;
+    width: 5vw; height: 5vw;
+    margin-top: -2.5vw;
+  }
+  
+
+ 
+  #crwap>form{
+    width: 98%;
+    background-color: turquoise;
+  }
+  #crwap ul{}
+  #crwap ul>li{
+   position: relative;
+   margin-bottom: 5vw;
+   padding-left: 145px; 
+  }
+  #crwap ul>li>label{
+    width: 12vw;
+    box-sizing: border-box;
+    padding-left: 0px;
+    background-image: none;
+
+  }
+  #crwap ul>li:nth-child(2)>label{
+    background-image: none
+  }
+  #crwap ul>li:nth-child(3)>label{
+    background-image: none
+  }
+  #crwap ul>li:nth-child(4)>label{
+    background-image: none
+  }
+  
+  aside>.submenu{
+    display: none;
+  }
+  aside>.top{
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 5px) and (max-width:579px){
+ 
+  article{
+    padding: 45px 0 50px;
+    box-sizing: border-box;
+  }
+  article>h3{
+    width: 93.10344827586208vw;
+    text-align: left;
+    margin-left: 3.448275862068966vw;
+  }
+
+  #hwrap{
+    margin: 0px auto;
+    display: block;
+  }
+
+  #hwrap>h1{
+    text-align: center;
+  }
+
+  #hwrap>nav{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -100vw; top: 0%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  #hwrap>nav>ul{
+    width: 93.10344827586208vw;
+    display: block;
+    margin: 34.48275862068966vw auto 0;
+  }
+  #hwrap>nav>ul>li{ 
+    display: block;
+    text-align : center;
+    
+  }
+  #hwrap>nav>ul>li>a{
+    font-size: 48px;
+    border-bottom: 1px solid #fff;
+  }
+
+  p.close{
+    display: block;
+    width: 6.896551724137932vw;
+    height: 6.896551724137932vw;
+    right: 3.448275862068966vw;
+    top: 3.448275862068966vw;
+    }
+  p.btn{
+      display: block;
+    }
+
+    #sec01>h3{
+      width: 51.72413793103449vw;
+      font-size: 43px;
+      position: absolute;
+      left: 50%; top: 44.82758620689656vw;
+      margin-left: -25.86206896551725vw;
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      color: #fff;
+      line-height: 1.8em;
+    }
+
+      #sec01>ul{
+        display: none;
+      }
+
+
+      #sec02>section{
+        width: 79.31034482758622vw;
+        /* width 1160 */
+        display: block;
+      }
+      #sec02>section>h4{
+        width: 100%;
+        margin-bottom: 5.172413793103449vw;
+      }
+      #sec02>.info>h4>img{
+        width: 39.65517241379311vw;
+        height: 26.20689655172414vw;
+      }
+
+      #sec02>section>ul{
+        width: 58.62068965517242vw;
+        margin: 0 auto;
+      }
+      #sec02>.info>ul>li{
+        margin-bottom: 3.103448275862069vw;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+      #sec02>.info>ul>li>dfn{
+        width: 13.79310344827586vw;
+        padding-right: 3.448275862068966vw;
+      }
+
+      #sec02>.info>ul>li:last-child>span:nth-child(2){
+        margin-bottom: 3.103448275862069vw
+      }
+      #sec02>.info>ul>li:last-child>span:nth-child(3){
+        display: block;
+        padding-left: 18.96551724137931vw;
+        margin-bottom: 3.103448275862069vw
+      }
+      #sec02>.info>ul>li:last-child>span:nth-child(4){
+        display: block;
+        padding-left: 18.96551724137931vw;
+      }
+      #sec02>.info{
+        margin-bottom: 5.172413793103449vw;
+      }
+
+      .skill>h4{
+      display: none;
+      }
+
+      .skill>ul>li{
+        padding-left:24.13793103448276vw;
+        position: relative;
+        margin-bottom: 6.896551724137932vw;
+      }
+      .skill>ul>li>dfn{
+        width: 24.13793103448276vw;
+      }
+      .skill>ul>li>span{
+        height: 4.137931034482759vw;
+      }
+      
+      #sec03>h3{
+        margin-bottom: 6.896551724137932vw;
+      }
+      #sec03>ul{
+        margin-bottom: 6.896551724137932vw;
+      }
+      #sec03>#gallery{
+        width: 100%;
+      }
+
+      #sec03>#gallery>#gshow{
+        width: 72.41379310344829vw;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      #sec03>#gallery>#gshow>#gall{
+        width: 434.4827586206897vw; 
+        /* 1130px */
+        margin: 0;
+        display: flex;
+        flex-wrap: nowrap;
+      }
+      #sec03>#gallery>#gshow>#gall>figure{
+        width: 72.41379310344829vw;
+        margin-bottom: 0;
+      }
+      #gallery>.next{
+        display: block;
+        margin-top: -35px;
+      }
+      #gallery>.prev{
+        display: block;
+        margin-top: -35px;
+      }
+      
+      #sec04>#crwap{
+        width: 79.31034482758622vw;
+        margin: 0 auto;
+      }
+      #crwap ul>li{
+        position: relative;
+        margin-bottom: 5.862068965517242vw;
+        padding-left:0; 
+       }
+       #crwap ul>li>label{
+        width: 145px;
+        padding-left: 0;
+        background: none;
+        color: rgba(252, 0, 0, 0.735);
+        text-indent: 3.448275862068966vw;
+      }
+      #crwap p>input{
+        width: 100%;
+      }
+    
+     
+      aside{
+        display: none;
+      }
+      footer{
+        padding: 1.724137931034483vw 0;
+      }
+      
+
+}

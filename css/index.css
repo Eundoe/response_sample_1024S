@@ -9,6 +9,16 @@
   font-size: 0px;
   visibility: hidden;
 }
+
+article{
+  padding: 45px 0 50px;
+}
+article>h3{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
 a{
   text-decoration: none;
   color: #000;
@@ -31,7 +41,7 @@ header{
   z-index: 999;
 }
 #hwrap{
-  width: 98%;
+  width: 100%;
   /* width: 1160px; */
   margin: 0px auto;
   display: flex;
@@ -39,6 +49,7 @@ header{
   position: relative;
   align-items: center;
 }
+#hwrap>h1{}
 #hwrap>h1>a{
   width: 180px;
   font-size: 30px;
@@ -62,14 +73,14 @@ header{
   color: #fff; 
 }
 
-/* p.close{
-  position: absolute;
+p.close{
   display: none;
-  width: 25px;
-  height: 25px;
+  width: 5vw; height: 5vw;
+  position: absolute;
+  right: 2.5vw; top: 2.5vw;
   background-color: red;
-  background-size: 100%;
-} */
+}
+
 p.btn{
   display: none;
   position: absolute;
@@ -91,11 +102,11 @@ p.btn{
 }
 
 #sec01>h3{
-  width: 100%;
+  
   font-size: 72px;
   position: absolute;
   left: 0; top: 24.17%;
-  text-align: center;
+
   font-family: 'Raleway', sans-serif;
   color: #fff;
 }
@@ -103,7 +114,7 @@ p.btn{
 #sec01>ul{
   position: absolute;
   left: 50%; bottom: 16.578%;
-  margin-left: 48.70689655172414%;
+  margin-left: -48.70689655172414%;
   /* 1160기준 -565 */
   width: 97.41379310344828%; 
   /* 1160px */
@@ -143,15 +154,11 @@ p.btn{
 #sec02{
   padding: 70px 0;
   background-color: rgb(232, 232, 232);
-  height: 100vh;
   
 }
 
 #sec02>h3{
-  width: 100%;
-  text-align: center;
   font-size: 59px;
-  margin-bottom: 50px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -183,6 +190,7 @@ p.btn{
   width: 287px;
   height: 190px;
 }
+#sec02>.info>ul{}
 #sec02>.info>ul>li{
   margin-bottom: 22px;
   padding-bottom: 10px;
@@ -246,24 +254,19 @@ p.btn{
 /* sec03 */
 
 #sec03{
-  height: 100vh;
-  padding: 70px 0 0;
   
 }
 
 #sec03>h3{
-  width: 100%;
   font-size: 60px;
   font-family: 'Raleway', sans-serif;
   margin-bottom: 50px;
-  text-align: center;
 }
 #sec03>ul{
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 65px;
-
 }
 #sec03>ul>li{
   line-height: 15px;
@@ -284,8 +287,8 @@ p.btn{
 }
 #sec03>#gallery>#gshow{}
 #sec03>#gallery>#gshow>#gall{
-  width: 98%;
-  /* 1160 */
+  width: 97.41379310344828%; 
+  /* 1130px */
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -334,16 +337,11 @@ p.btn{
 /* sec04 */
 
 #sec04{
-  height: 100vh;
   background-color: #f93c64;
-  padding:72px 0;
 }
 
 #sec04>h3{
-  width: 100%;
   font-size: 50px;
-  margin-bottom: 45px;
-  text-align: center;
 }
 #sec04>#crwap{
   width: 98%;
@@ -351,7 +349,7 @@ p.btn{
   margin: 0 auto;
 }
 #crwap>form{
-  width: 1066px;
+  width: 98%;
   background-color: turquoise;
 }
 #crwap ul{}
