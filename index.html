@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/index_media.css">
-  <script src="./js/index.js"></script>
+  <script defer src="./js/index.js" type="text/javascript"></script>
 </head>
 <body>
   <!-- 내용은 내것으로 채워넣기 img빼고  -->
@@ -119,29 +119,29 @@
       <div id="gshow">
         <!-- gshow에서 overflow hidden -->
         <div id="gall">
-          <figure>
+          <figure name = '1'>
             <img src="./images/pic01.png" alt="work01">
-            <figcaption>Hyundal</figcaption>
+            <figcaption>Hyundal1</figcaption>
           </figure>
-          <figure>
+          <figure name = '2'>
             <img src="./images/pic02.png" alt="work02">
-            <figcaption>Hyundal</figcaption>
+            <figcaption>Hyundal2</figcaption>
           </figure>
-          <figure>
+          <figure name = '3'>
             <img src="./images/pic03.png" alt="work03">
-            <figcaption>Hyundal</figcaption>
+            <figcaption>Hyundal3</figcaption>
           </figure>
-          <figure>
+          <figure name = '4'>
             <img src="./images/pic04.png" alt="work04">
-            <figcaption>Hyundal</figcaption>
+            <figcaption>Hyundal4</figcaption>
           </figure>
-          <figure>
+          <figure name = '5'>
             <img src="./images/pic01.png" alt="work05">
-            <figcaption>Hyundal</figcaption>
+            <figcaption>Hyundal5</figcaption>
           </figure>
-          <figure>
+          <figure name = '6'>
             <img src="./images/pic02.png" alt="work06">
-            <figcaption>Hyundal</figcaption>
+            <figcaption>Hyundal6</figcaption>
           </figure>
         </div>
       </div>
@@ -150,25 +150,26 @@
      </div>
 
      <div id="modal">
-      <p class="close">close</p>
-      <section class="mshow">
+      <p class="closee">close</p>
+      <section class="mshow">       
         <h5>work name</h5>
         <div>
           <figure>
             <img src="./images/pic01.png" alt="worked1">
             <figcaption>포폴네임</figcaption>
+          </figure>
             <dl>
               <!-- 나중에 DB로 바꿀곳 -->
               <dt>제작년도</dt>
-              <dd></dd>
+              <dd class="year">202111</dd>
               <dt>사용프로그램</dt>
-              <dd></dd>
+              <dd class="pgm">javascript</dd>
               <dt>주소</dt>
-              <dd></dd>
+              <dd class ="ads">seoul</dd>
               <dt>설명</dt>
-              <dd></dd>
+              <dd class = "itd">texttexttexttexttexttext</dd>
             </dl>
-          </figure>
+          
         </div>
       </section>
      </div>
@@ -217,8 +218,6 @@
       </small>
     </footer>
   </div>
- <script>
-
- </script>
+  
 </body>
 </html>

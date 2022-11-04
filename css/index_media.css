@@ -1,6 +1,10 @@
 @charset "utf-8";
 
 /*스크롤 문제를 해결하기 위해서 사이즈를 2px정도 늘리는것도 방법 */
+a {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 1160px){
   #hwrap{
     width: 1160px;
@@ -14,8 +18,8 @@
       width: 1130px;}
   #sec04>#crwap{
       width: 1160px;}
+  }
   
-}
 
 @media screen and (min-width: 980px) and (max-width:1159px){
   
@@ -32,6 +36,7 @@
     flex-wrap: wrap;
     color: #fff;
   }
+
 
 }
 
@@ -50,11 +55,13 @@
     padding-top: 30vh;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.6);
+    z-index: 300;
   }
   #hwrap>nav>ul{
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    display: block;
   }
   #hwrap>nav>ul>li{ 
     line-height: 10vh;
@@ -63,10 +70,11 @@
     border-bottom: 1px solid #fff;
   }
   #hwrap>nav>ul>li>a{
-    line-height: 10vh;
+    line-height: 7vh;
   }
   p.close{
   display: block;
+  z-index: 301;
   }
   p.btn{
     display: block;
@@ -126,18 +134,21 @@
     width: 100%;
   }
   #sec03>#gallery>#gshow{
-    width: 70vw;
+    width: 69.38775510204081vw;
     margin: 0 auto;
     overflow: hidden;
   }
   #sec03>#gallery>#gshow>#gall{
-    width: 210vw;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    width: 208.1632653061224vw;
+    flex-wrap: nowrap;
+    justify-content: center;
     background-color: green;
+    box-sizing: border-box;
+    
   }
   #sec03>#gallery>#gshow>#gall>figure{
-    width: 32.5vw;
+    width: 29.38775510204081vw;
+
     margin-bottom: 0;
   }
   #sec03>#gallery>#gshow>#gall>figure>img{
@@ -192,6 +203,56 @@
     display: none;
   }
 
+  #modal{
+    padding: 10vh 5vw 5vh;
+    box-sizing: border-box;
+  }
+  
+  #modal>section{
+    position: static;
+    width: 83.67346938775509vw;
+    height: 88.67924528301888vh;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+
+  #modal>section>h5{
+    font-size: 6vh;
+    margin-bottom: 2vh;
+  }
+
+  #modal>section>div{
+    display: block;
+  }
+  #modal>section>div>figure{
+    width: 100%;
+    height: 36vh;
+    margin: 0 auto 2vh;
+    overflow: hidden;
+  }
+  #modal>section>div>figure>img{
+    width: 100%;
+  }
+
+  #modal>section>div>dl{
+    width: 100%;
+  }
+  #modal>section>div>dl>dt{
+    width: 35%;
+  }
+  #modal>section>div>dl>dd{
+    width: 65%;
+  }
+  #modal>section>div>dl>dt:nth-of-type(4){
+    border: none;
+  }
+  #modal>section>div>dl>dd:nth-of-type(4){
+    border: none;
+  }
+
+
 }
 
 @media screen and (min-width: 5px) and (max-width:579px){
@@ -199,6 +260,9 @@
   article{
     padding: 45px 0 50px;
     box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
   }
   article>h3{
     width: 93.10344827586208vw;
@@ -214,6 +278,9 @@
   #hwrap>h1{
     text-align: center;
   }
+  #hwrap>h1>a{
+    text-align: center;
+  }
 
   #hwrap>nav{
     position: fixed;
@@ -221,6 +288,7 @@
     height: 100%;
     left: -100vw; top: 0%;
     background-color: rgba(0, 0, 0, 0.6);
+    z-index: 300;
   }
   #hwrap>nav>ul{
     width: 93.10344827586208vw;
@@ -243,6 +311,7 @@
     height: 6.896551724137932vw;
     right: 3.448275862068966vw;
     top: 3.448275862068966vw;
+    z-index: 301;
     }
   p.btn{
       display: block;
@@ -325,32 +394,58 @@
         height: 4.137931034482759vw;
       }
       
+
+      /* sec03 */
       #sec03>h3{
         margin-bottom: 6.896551724137932vw;
       }
       #sec03>ul{
-        margin-bottom: 6.896551724137932vw;
+        display: block;
+        margin: 0 auto;
+        width: 66.55172413793104vw;
+        
       }
+      #sec03>ul>li{
+        padding: 0;
+        border-left: none;
+        margin-bottom: 5.172413793103449vw;
+        text-align: center;
+      }
+      #sec03>ul>li>a{
+        display: block;
+        border: 1px solid #666;
+        line-height: 25px;
+
+      }
+
       #sec03>#gallery{
         width: 100%;
       }
 
       #sec03>#gallery>#gshow{
-        width: 72.41379310344829vw;
+        width: 66.55172413793104vw;
         margin: 0 auto;
         overflow: hidden;
       }
       #sec03>#gallery>#gshow>#gall{
-        width: 434.4827586206897vw; 
+        width: 399.3103448275863vw; 
         /* 1130px */
         margin: 0;
         display: flex;
         flex-wrap: nowrap;
       }
       #sec03>#gallery>#gshow>#gall>figure{
-        width: 72.41379310344829vw;
+        width: 66.55172413793104vw;
         margin-bottom: 0;
       }
+
+      #sec03>#gallery>#gshow>#gall>figure>img{
+        width: 66.55172413793104vw;
+        height: 38.96551724137932vw;
+        border-radius: 0;
+        margin: 0 0 3.448275862068966vw;
+      }
+
       #gallery>.next{
         display: block;
         margin-top: -35px;
@@ -360,12 +455,11 @@
         margin-top: -35px;
       }
       
+      /* sec04 */
       #sec04>#crwap{
         width: 79.31034482758622vw;
-        margin: 0 auto;
       }
       #crwap ul>li{
-        position: relative;
         margin-bottom: 5.862068965517242vw;
         padding-left:0; 
        }
@@ -374,13 +468,28 @@
         padding-left: 0;
         background: none;
         color: rgba(252, 0, 0, 0.735);
-        text-indent: 3.448275862068966vw;
+        left: 20px
       }
+      #crwap ul>li:nth-child(2)>label{
+        background-image: none;
+      }
+      #crwap ul>li:nth-child(3)>label{
+        background-image: none;
+      }
+      #crwap ul>li:nth-child(4)>label{
+        background-image: none;
+      }    
       #crwap p>input{
         width: 100%;
+        text-indent: 3.448275862068966vw;
       }
-    
-     
+      #crwap ul>li>textarea{
+        text-indent: 3.448275862068966vw;
+      }
+      #crwap>form p{
+        text-align: left;
+      }
+
       aside{
         display: none;
       }
@@ -388,5 +497,53 @@
         padding: 1.724137931034483vw 0;
       }
       
+      #modal{
+        padding: 10vh 5vw 5vh;
+        box-sizing: border-box;
+      }
+      
+      #modal>section{
+        position: static;
+        width: 83.67346938775509vw;
+        height: 88.67924528301888vh;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 25px;
+        box-sizing: border-box;
+      }
+    
+      #modal>section>h5{
+        font-size: 6vh;
+        margin-bottom: 2vh;
+      }
+    
+      #modal>section>div{
+        display: block;
+      }
+      #modal>section>div>figure{
+        width: 100%;
+        height: 36vh;
+        margin: 0 auto 2vh;
+        overflow: hidden;
+      }
+      #modal>section>div>figure>img{
+        width: 100%;
+      }
+    
+      #modal>section>div>dl{
+        width: 100%;
+      }
+      #modal>section>div>dl>dt{
+        width: 35%;
+      }
+      #modal>section>div>dl>dd{
+        width: 65%;
+      }
+      #modal>section>div>dl>dt:nth-of-type(4){
+        border: none;
+      }
+      #modal>section>div>dl>dd:nth-of-type(4){
+        border: none;
+      }
 
 }
